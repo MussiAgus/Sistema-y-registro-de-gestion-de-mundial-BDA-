@@ -3,7 +3,7 @@
    Integrantes: Matías Ezequiel Chiaravalle, Nahuel Battistelli, Agustín Nicolás Mussi Pulcini, Alex Uriel Ruiz
    Descripción: ENTREGA 5 COMPLETA - CORREGIDA SEGÚN DER FINAL
    Incluye:
-   - DDL (Creación de todas las tablas según DER).
+   - DDL .
    - SPs ABM (Altas encapsuladas).
    - Lógica de Negocio (Tarjetas, Suspensiones, Goles, Árbitros, Publicidad, Cambios, Convocatorias).
    - Importación de datos (Simulada).
