@@ -103,7 +103,7 @@ CREATE TABLE op.Modificacion_Convocatoria (
     Fecha DATE NOT NULL
 );
 
--- 4. Cuerpo Técnico - [NUEVO SEGÚN DER]
+-- 4. Cuerpo Técnico - 
 CREATE TABLE op.CuerpoTecnico (
     IdCuerpoTecnico INT IDENTITY(1,1) PRIMARY KEY,
     IdSeleccion INT NOT NULL FOREIGN KEY REFERENCES op.Seleccion(IdSeleccion),
@@ -127,7 +127,7 @@ CREATE TABLE op.Alineacion_Jugador (
     PRIMARY KEY (IdAlineacion, IdJugador)
 );
 
--- Cambios durante el partido - [NUEVO REQUERIMIENTO]
+-- Cambios durante el partido 
 CREATE TABLE op.Cambios (
     IdCambio INT IDENTITY(1,1) PRIMARY KEY,
     IdPartido INT NOT NULL FOREIGN KEY REFERENCES op.Partido(IdPartido),
@@ -289,7 +289,7 @@ BEGIN
 END;
 GO
 
--- Procedimiento para Registrar un Cambio de Jugador [NUEVO]
+-- Procedimiento para Registrar un Cambio de Jugador
 CREATE OR ALTER PROCEDURE op.usp_RegistrarCambioJugador
     @IdPartido INT,
     @IdJugadorSaliente INT,
