@@ -88,7 +88,7 @@ CREATE TABLE op.Jugador (
     Nacionalidad VARCHAR(50) NOT NULL
 );
 
--- 3. Convocatorias y Modificaciones (Altas/Bajas) - [NUEVO REQUERIMIENTO]
+-- 3. Convocatorias y Modificaciones (Altas/Bajas)
 CREATE TABLE op.Convocado (
     IdConvocado INT IDENTITY(1,1) PRIMARY KEY,
     IdSeleccion INT NOT NULL FOREIGN KEY REFERENCES op.Seleccion(IdSeleccion),
