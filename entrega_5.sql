@@ -1,7 +1,7 @@
 /* =========================================================================
    Fecha: Octubre 2026
    Integrantes: Matías Ezequiel Chiaravalle, Nahuel Battistelli, Agustín Nicolás Mussi Pulcini, Alex Uriel Ruiz
-   Descripción: ENTREGA 5 COMPLETA - CORREGIDA SEGÚN DER FINAL
+   Descripción: ENTREGA 5 
    Incluye:
    - DDL .
    - SPs ABM (Altas encapsuladas).
