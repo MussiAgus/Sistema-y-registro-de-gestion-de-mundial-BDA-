@@ -318,7 +318,7 @@ BEGIN
 END;
 GO
 
--- Procedimiento para Altas/Bajas de Último Momento (Convocatorias) [NUEVO]
+-- Procedimiento para Altas/Bajas de Último Momento (Convocatorias) 
 CREATE OR ALTER PROCEDURE op.usp_ModificarConvocatoria
     @IdConvocado INT,
     @Tipo VARCHAR(10),
@@ -344,7 +344,7 @@ BEGIN
 END;
 GO
 
--- Procedimiento para Simular Importación de Datos [NUEVO]
+-- Procedimiento para Simular Importación de Datos 
 CREATE OR ALTER PROCEDURE cfg.usp_ImportarDatosExternos
 AS
 BEGIN
@@ -555,7 +555,7 @@ GO
 
 -- PARTE 4: TESTING (Ejecuta TODOS los requerimientos)
 
-PRINT '================ INICIANDO TESTING INTEGRAL ================';
+PRINT 'TESTING INTEGRAL';
 
 -- Setup Básico
 INSERT INTO op.Pais (Nombre, HorarioUTC) VALUES ('Argentina', 'UTC-3'), ('Brasil', 'UTC-3');
@@ -608,5 +608,5 @@ EXEC op.usp_AsignarPublicidadPartido @IdPartido = 1, @IdSede = 1;
 -- 8. Importación Externa
 EXEC cfg.usp_ImportarDatosExternos;
 
-PRINT '================ TESTING COMPLETADO CON ÉXITO ================';
+PRINT 'TESTING COMPLETADO CON EXITO';
 GO
